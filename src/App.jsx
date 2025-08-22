@@ -406,24 +406,43 @@ export default function App(){
         </section>
 
         {/* Projects */}
+               
         <section id="projects" className="border-b">
           <div className="mx-auto max-w-6xl p-5">
-            <motion.h2 {...fade()} className="text-2xl font-semibold mb-4 flex items-center gap-2"><Rocket className="w-5 h-5"/> {locale==='de'?'Projekte':'Projects'}</motion.h2>
+            <motion.h2 {...fade()} className="text-2xl font-semibold mb-4 flex items-center gap-2">
+              <Rocket className="w-5 h-5"/> {locale==='de'?'Projekte':'Projects'}
+            </motion.h2>
+
             <div className={clsx('grid sm:grid-cols-2 lg:grid-cols-3', 'gap-5')}>
               {PROJECTS.map((p, i) => (
                 <motion.div key={p.title} {...fade(i)}>
-                  <Card className={clsx('h-full flex flex-col')}>
-                    <CardHeader><CardTitle className="flex items-center justify-between gap-2"><span>{p.title}</span><span className={clsx('text-xs px-2 py-0.5 rounded-full border', 'border-black/10 dark:border-white/10', accentBgSoft)}>{p.period}</span></CardTitle></CardHeader>
+                  <Card className="h-full flex flex-col">
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between gap-2">
+                        <span>{p.title}</span>
+                        <span className={clsx(
+                          'text-xs px-2 py-0.5 rounded-full border',
+                          'border-black/10 dark:border-white/10',
+                          accentBgSoft
+                        )}>
+                          {p.period}
+                        </span>
+                      </CardTitle>
+                    </CardHeader>
+
                     <CardContent className="flex-1 flex flex-col">
                       <p className="text-sm opacity-85 mb-3">{p.description}</p>
-                      <div className="flex flex-wrap gap-2 mb-3">{p.tags.map(tag => (<span key={tag} className="text-xs inline-flex items-center px-2 py-1 rounded-full border border-black/10 dark:border-white/10">{tag}</span>))}</div>
-                      <div className="mt-auto flex gap-2">
-                        {(p.links || []).map((l) => (
-                          <Button key={l.label} variant="outline" className="gap-2" asChild>
-                            <a href={l.href} target="_blank" rel="noreferrer">{l.label} <ArrowUpRight className="w-3 h-3"/></a>
-                          </Button>
+                      <div className="flex flex-wrap gap-2">
+                        {p.tags.map(tag => (
+                          <span
+                            key={tag}
+                            className="text-xs inline-flex items-center px-2 py-1 rounded-full border border-black/10 dark:border-white/10"
+                          >
+                            {tag}
+                          </span>
                         ))}
                       </div>
+                      {/* keine Buttons mehr */}
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -431,6 +450,7 @@ export default function App(){
             </div>
           </div>
         </section>
+
 
         {/* Experience */}
         <section id="experience" className="border-b">
