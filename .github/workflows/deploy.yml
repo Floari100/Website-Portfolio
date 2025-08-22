@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      # Falls du KEINE package-lock.json hast, ändere Zeile unten zu: npm install
+      # Falls du KEINE package-lock.json hast, ersetze 'npm ci' durch 'npm install'
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
