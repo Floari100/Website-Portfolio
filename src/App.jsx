@@ -34,7 +34,7 @@ const profile = {
   email: 'Florexhaj@hotmail.com',
   github: 'https://github.com/Floari100',
   linkedin: 'https://www.linkedin.com/in/florian-rexhaj-60a2b9363/',
-  resume: `${import.meta.env.BASE_URL}FlorianRexhaj-Lebenslauf.pdf`,
+  resume: `${import.meta.env.BASE_URL}CV_Florian_Rexhaj.pdf`,
 };
 
 const highlights = [
@@ -269,9 +269,13 @@ export default function App() {
               <a className="button button-primary" href="#projects">
                 Projekte ansehen <ArrowUpRight size={16} />
               </a>
-              <a className="button button-secondary" href={profile.resume} target="_blank" rel="noreferrer">
-                Lebenslauf öffnen <ExternalLink size={16} />
-              </a>
+              <a
+              className="button button-secondary"
+              href={profile.resume}
+              download="FlorianRexhaj-Lebenslauf.pdf"
+            >
+              Lebenslauf herunterladen <ExternalLink size={16} />
+            </a>
             </div>
 
             <div className="hero-meta">
