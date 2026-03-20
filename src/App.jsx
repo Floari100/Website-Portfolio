@@ -492,8 +492,7 @@ export default function App() {
               <div className="eyebrow">Contact</div>
               <h2>Open for strong projects, practical builds and ambitious ideas.</h2>
               <p>
-                Diese Version ist bewusst erwachsener, klarer und stärker auf deine echten Projekte
-                ausgerichtet — also genau so, dass sie als richtiges Portfolio funktioniert.
+              Dieses Portfolio zeigt meine aktuellen Projekte, meinen technischen Fokus und die Richtung, in die ich mich als Entwickler weiterentwickle.
               </p>
             </div>
 
