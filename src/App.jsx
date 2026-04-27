@@ -23,6 +23,8 @@ import {
   BriefcaseBusiness,
   BarChart3,
   Blocks,
+  CalendarDays,
+  BookOpen,
 } from 'lucide-react';
 
 const profile = {
@@ -97,6 +99,54 @@ const projects = [
       'Starker Fokus auf Übersicht, Entwicklung von Portfolios und verständliche Visualisierung',
     ],
     tags: ['Finance', 'Realtime Data', 'Dashboard', 'Analysis'],
+    links: [],
+  },
+  {
+    name: 'Outlook Mail Clone',
+    category: 'Web App',
+    status: 'Completed',
+    year: '2026',
+    icon: Mail,
+    description:
+      'Ein funktionierender, vereinfachter Outlook-Clone mit den wichtigsten Mail-Funktionen, sauberer Oberfläche und klarer Drei-Spalten-Struktur.',
+    details: [
+      'Mail-Übersicht mit Ordnern, Nachrichtenliste und Lesebereich umgesetzt',
+      'Core-Funktionen wie Mails anzeigen, auswählen, suchen und strukturieren eingebaut',
+      'Bewusst einfacher gehalten als Outlook, aber mit echtem Produktgefühl und sauberer Bedienung',
+    ],
+    tags: ['React', 'TypeScript', 'Mail UI', 'Product Clone'],
+    links: [],
+  },
+  {
+    name: 'Google Kalender Clone',
+    category: 'Web App',
+    status: 'Completed',
+    year: '2026',
+    icon: CalendarDays,
+    description:
+      'Ein funktionierender Kalender-Clone inspiriert von Google Kalender mit klarer Tages- und Terminstruktur für einfache Planung.',
+    details: [
+      'Kalenderansicht mit Terminen, Zeiten und übersichtlicher Darstellung umgesetzt',
+      'Fokus auf einfache Bedienung, klare Struktur und realistische Kalenderlogik',
+      'Als praktisches UI-Projekt für Planung, Komponentenstruktur und Zustandslogik entwickelt',
+    ],
+    tags: ['React', 'Calendar UI', 'Planning', 'Frontend'],
+    links: [],
+  },
+  {
+    name: 'Mediothek Bücherplattform',
+    category: 'Web App',
+    status: 'Completed',
+    year: '2026',
+    icon: BookOpen,
+    description:
+      'Eine Webanwendung für die Mediothek der Kanti, mit der Bücher gesucht, gefiltert und passende Vorschläge angezeigt werden können.',
+    details: [
+      'Bücher können nach Titel, Thema oder weiteren Angaben gesucht werden',
+      'Vorschläge helfen dabei, schneller passende Bücher zu finden',
+      'Projekt mit Fokus auf Suchlogik, Übersichtlichkeit und praktischem Nutzen im Schulumfeld',
+    ],
+    tags: ['Search', 'School Project', 'UI', 'Data'],
     links: [],
   },
   {
