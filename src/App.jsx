@@ -170,7 +170,7 @@ const projects = [
   {
     name: 'Roblox Wrapped',
     category: 'Data & AI',
-    status: 'In Progress',
+    status: 'Completed',
     year: '2026',
     icon: Gamepad2,
     description:
@@ -180,13 +180,13 @@ const projects = [
       'Visualisierung von Statistiken wie meistgespielte Games, Spielzeit und Trends',
       'Fokus auf moderne UI und klare, verständliche Darstellung von Daten',
     ],
-    tags: ['Roblox', 'Data Analysis', 'Dashboard', 'UI'],
+    tags: ['Roblox', 'Data Analysis', 'Dashboard', 'API'],
     links: [],
   },
   {
     name: 'Chess Opening Trainer',
     category: 'Web App',
-    status: 'In Progress',
+    status: 'Completed',
     year: '2026',
     icon: Swords,
     description:
@@ -194,9 +194,9 @@ const projects = [
     details: [
       'Interaktives Brett zum Nachspielen und Lernen von Eröffnungen',
       'Erklärungen zu Zügen, Ideen und typischen Varianten',
-      'Fokus auf Lernen statt Spielen gegen Computer',
+      'Verschiedene Schwierigkeitsstufen von Gegner AI',
     ],
-    tags: ['Chess', 'Learning Tool', 'UI', 'Frontend'],
+    tags: ['Chess', 'Learning Tool', 'UI', 'AI Computer'],
     links: [],
   },
   {
