@@ -25,6 +25,8 @@ import {
   Blocks,
   CalendarDays,
   BookOpen,
+  Gamepad2,
+  Swords,
 } from 'lucide-react';
 
 const profile = {
@@ -163,6 +165,38 @@ const projects = [
       'Praxisnahes Projekt für App-Logik, State-Verhalten und Benutzerführung',
     ],
     tags: ['React', 'CRUD', 'JSON', 'UI'],
+    links: [],
+  },
+  {
+    name: 'Roblox Wrapped',
+    category: 'Data & AI',
+    status: 'In Progress',
+    year: '2026',
+    icon: Gamepad2,
+    description:
+      'Ein Projekt ähnlich wie Spotify Wrapped, aber für Roblox: Analyse von Spielverhalten, Statistiken und personalisierte Jahresrückblicke für Nutzer.',
+    details: [
+      'Auswertung von Nutzerdaten und Spielaktivitäten über einen bestimmten Zeitraum',
+      'Visualisierung von Statistiken wie meistgespielte Games, Spielzeit und Trends',
+      'Fokus auf moderne UI und klare, verständliche Darstellung von Daten',
+    ],
+    tags: ['Roblox', 'Data Analysis', 'Dashboard', 'UI'],
+    links: [],
+  },
+  {
+    name: 'Chess Opening Trainer',
+    category: 'Web App',
+    status: 'In Progress',
+    year: '2026',
+    icon: Swords,
+    description:
+      'Eine Lernplattform für Schach-Eröffnungen mit Fokus auf Verständnis, Wiederholung und saubere visuelle Darstellung – inspiriert von chess.com.',
+    details: [
+      'Interaktives Brett zum Nachspielen und Lernen von Eröffnungen',
+      'Erklärungen zu Zügen, Ideen und typischen Varianten',
+      'Fokus auf Lernen statt Spielen gegen Computer',
+    ],
+    tags: ['Chess', 'Learning Tool', 'UI', 'Frontend'],
     links: [],
   },
   {
